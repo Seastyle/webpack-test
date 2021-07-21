@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
   }
 }
