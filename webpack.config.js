@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-22 16:26:01
- * @LastEditTime: 2021-07-24 15:31:10
+ * @LastEditTime: 2021-07-24 20:52:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /webpack-test/webpack.config.js
@@ -118,7 +118,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true
+            }
         }),
         new MiniCssExtractPlugin({
             filename: 'css/built.css'
